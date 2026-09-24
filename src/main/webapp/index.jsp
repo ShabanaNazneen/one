@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sardhar — Friendly Online Shopping</title>
+<title>LumaShop — Friendly Online Shopping</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -812,7 +812,7 @@
       </button>
       <a href="#" class="brand">
         <i class="fas fa-shopping-bag"></i>
-        <span>Sardhar<span class="accent">.</span></span>
+        <span>Luma<span class="accent">Shop</span></span>
       </a>
     </div>
 
@@ -848,7 +848,7 @@
   <div class="container">
     <span class="hero-badge">✨ New Collection 2026</span>
     <h1>Everyday Essentials, <em>Beautifully</em> Curated</h1>
-    <p>Discover quality products at fair prices. Free shipping on orders over $50, easy returns, and friendly support from Sardhar.</p>
+    <p>Discover quality products at fair prices. Free shipping on orders over $50, easy returns, and friendly support.</p>
     <div class="hero-actions">
       <button class="btn btn-primary" id="shopNowBtn">
         <i class="fas fa-shopping-cart"></i> Start Shopping
@@ -931,7 +931,7 @@
     <div class="section-head">
       <div>
         <h2>Loved by Thousands</h2>
-        <p>Real feedback from real Sardhar customers</p>
+        <p>Real feedback from real customers</p>
       </div>
     </div>
     <div class="testimonial-scroll" id="testimonialList"></div>
@@ -944,7 +944,7 @@
     <div class="newsletter">
       <div>
         <h3>Get 10% Off Your First Order</h3>
-        <p>Subscribe for exclusive Sardhar deals, tips, and new arrivals</p>
+        <p>Subscribe for exclusive deals, tips, and new arrivals</p>
       </div>
       <form id="newsletterForm">
         <input type="email" id="newsletterEmail" placeholder="you@example.com" required>
@@ -964,7 +964,7 @@
       <div>
         <div class="brand">
           <i class="fas fa-shopping-bag"></i>
-          <span>Sardhar<span class="accent">.</span></span>
+          <span>Luma<span class="accent">Shop</span></span>
         </div>
         <p>Friendly, modern shopping for everyday essentials. Quality products, fair prices, and a smooth experience.</p>
         <div class="socials">
@@ -1003,7 +1003,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; <span id="year"></span> Sardhar. Made with care for happy shoppers.
+      &copy; <span id="year"></span> LumaShop. Made with care for happy shoppers.
     </div>
   </div>
 </footer>
@@ -1040,13 +1040,13 @@ const PRODUCTS = [
 
 const TESTIMONIALS = [
   { name: 'Sarah K.', role: 'Verified Buyer', stars: 5, avatar: 'https://i.pravatar.cc/100?img=47',
-    text: 'Amazing quality and fast delivery. The packaging was eco-friendly too — I love shopping at Sardhar!' },
+    text: 'Amazing quality and fast delivery. The packaging was eco-friendly too — I love shopping here!' },
   { name: 'Daniel M.', role: 'Regular Customer', stars: 5, avatar: 'https://i.pravatar.cc/100?img=12',
-    text: 'Best prices I found online. Sardhar customer support was super helpful when I had a question.' },
+    text: 'Best prices I found online. Customer support was super helpful when I had a question.' },
   { name: 'Priya S.', role: 'Designer', stars: 4, avatar: 'https://i.pravatar.cc/100?img=32',
-    text: 'Beautifully curated products. I keep coming back to Sardhar for more — highly recommended!' },
+    text: 'Beautifully curated products. I keep coming back for more — highly recommended!' },
   { name: 'Tom W.', role: 'First-time Buyer', stars: 5, avatar: 'https://i.pravatar.cc/100?img=68',
-    text: 'Smooth checkout, no hidden fees, and my Sardhar order arrived two days early. Impressed!' }
+    text: 'Smooth checkout, no hidden fees, and my order arrived two days early. Impressed!' }
 ];
 
 /* ========== STATE ========== */
@@ -1206,7 +1206,7 @@ document.getElementById('dealAddBtn').addEventListener('click', (e) => {
 });
 
 document.getElementById('cartBtn').addEventListener('click', () => {
-  alert(`🛒 You have ${cartCount} item${cartCount !== 1 ? 's' : ''} in your Sardhar cart.`);
+  alert(`🛒 You have ${cartCount} item${cartCount !== 1 ? 's' : ''} in your cart.`);
 });
 
 document.getElementById('newsletterForm').addEventListener('submit', (e) => {
@@ -1218,7 +1218,7 @@ document.getElementById('newsletterForm').addEventListener('submit', (e) => {
     msg.style.color = '#ffb3b3';
     return;
   }
-  msg.textContent = '🎉 Thanks! Check your inbox for 10% off from Sardhar.';
+  msg.textContent = '🎉 Thanks! Check your inbox for 10% off.';
   msg.style.color = '#a8e6cf';
   document.getElementById('newsletterEmail').value = '';
   setTimeout(() => msg.textContent = '', 4000);
